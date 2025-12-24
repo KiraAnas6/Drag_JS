@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "JetBrains Mono" , sans-serif;
+    background-color: rgba(0, 0, 255, 0.534);
+    color: white;
+}
+
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 10px;
+    min-height: 80vh;
+}
+
+ul {
+    padding: 10px;
+    border: 5px solid;
+    min-height: 80%;
+    list-style-type: none;
+}
+li {
+    background-color: red;
+    padding: 10px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.left li {
+    background-color: pink;
+    color: black;
+}
+.right li {
+    background-color: blueviolet;
+}
+li.header {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: brown;
+    color: white;
+}
+li.dragging {
+    opacity: 0.5;
+}
